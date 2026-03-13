@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/Estilos.css">
+    <title>Sociedad Sodera</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <a href="index.html">Ir al inicio</a>
+    </nav>
+    <section id="sociedad"> 
+        <h2>Únete a la comunidad de fans</h2>
+        <p>Completa el siguiente formulario para registrarte en nuestra comunidad de fans.</p>
+        <form>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="10" max="100"><br><br>
+        <label for="pais">País:</label><br>
+        <input type="text" id="pais" name="pais"><br><br>
+        <label for="album">Álbum favorito:</label><br>
+        <select id="album" name="album">
+        <option value="">Selecciona uno</option>
+        <option value="soda">Soda Stereo</option>
+        <option value="nada">Nada Personal</option>
+        <option value="signos">Signos</option>
+        <option value="doblevida">Doble Vida</option>
+        <option value="cancionanimal">Canción Animal</option>
+        <option value="dynamo">Dynamo</option>
+        <option value="sueno">Sueño Stereo</option>
+    </select><br><br>
+    <label>¿Cómo conociste la banda?</label><br>
+    <input type="radio" name="conocer" value="radio"> Radio<br>
+    <input type="radio" name="conocer" value="internet"> Internet<br>
+    <input type="radio" name="conocer" value="amigos"> Amigos<br>
+    <input type="radio" name="conocer" value="familia"> Familia<br><br>
+    <label for="mensaje">¿Por qué te gusta Soda Stereo?</label><br>
+    <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+    <input type="submit" value="Registrarse">
+    <input type="reset" value="Limpiar formulario">
+    </section>  
+</body>
+</html>
